@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg "  style="background-color: #d50032;">
+        <div class="container-fluid">
+          <a href="index.html"><img class="logo" src="https://cdn.usteamcolors.com/images/nba/golden-state-warriors.svg" alt="Logo de Golden State Warriors"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/be_warrior.html">Be a warrior</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/proximos_partidos.html">Next games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/higlights.html">Highlights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/tickets.html">Tickets</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Starters</h1>
+    <!-- Carrusel con los titulares del equipo -->
+    <div id="carouselExampleCaptions" class="carousel slide m-5" style="max-width: 1280px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2023-02/GettyImages-1246804881%20%281%29.jpg?itok=Nlvxli1t" class="d-block w-100" alt="Sthephen Curry">
+          <div class="carousel-caption d-none d-md-block ">
+            <!-- Logros del jugador -->
+              <h1>Stephen Curry</h1>
+              <h2>Position: point guard</h2>
+                <p>  
+                  🏆x4 NBA champion  🏅x2 NBA Most Valuable Player Award ⭐x9 NBA All-Star ⭐NBA 75yh Anniversary Team ⭐Best Shooter in NBA History
+                </p>   
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapers.com/images/hd/basketball-player-klay-thompson-3nvupex3jifyfiy1.jpg" class="d-block w-100" alt="Klay Thompson">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Logros del jugador -->
+            <h1>Klay Thompson</h1>
+            <h2>Position: guard</h2>
+              <p>
+                🏆x4 NBA champion ⭐x5 NBA All-Star ⭐All-Rokie First Team ⭐All-Defensive Second Team 🏅Record NBA: 13 Triples in a Single Game
+              </p>  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaper.dog/large/20423013.jpg" class="d-block w-100" alt="Draymond Green">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Logros del jugador -->
+            <h1>Draymond Green</h1>
+            <h2>Position: forward</h2>
+              <p>
+                🏆x4 NBA champion ⭐x4 NBA All-Star 🏅Defensive Player of the Year 🏅Steals Leader ⭐x4 All-Defensive First Team  
+              </p>     
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapers.com/images/hd/andrew-wiggins-cool-pose-psfsmtl01lcekzjj.jpg" class="d-block w-100" alt="Andrew Wiggins">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Logros del jugador -->
+            <h1>Andrew Wiggins</h1>
+            <h2>Position: shooting guard</h2>
+            <p>
+              🏆x1 NBA champion 🏅Rookie of the Year ⭐All-Rookie First Team ⭐x1 NBA All-Star
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://library.sportingnews.com/2022-05/kevon-looney.jpeg" class="d-block w-100" alt="Kevon Looney">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- Logros del jugador -->
+            <h1>Kevon Looney</h1>
+            <h2>Position: power forward/center</h2>
+              <p>
+                🏆x3 NBA champion ⭐Second-team All-Pac-12 ⭐McDonald's All-American
+              </p>   
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <!-- Suplentes -->
+    <h1 class="titulos">Bench</h1>
+    <div class="contenedor-grid">
+      <div class="jugador-grid-i">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630228.png?imwidth=1040&imheight=760" alt="Jonathan Kuminga">
+        <div class="info-pl">
+          <h2 class="nombre">Jonathan Kuminga</h2>
+          <div class="numy-pos">
+            <h2>00</h2>
+            <h4>Forward</h4>
+          </div>
+        </div>
+        
+      </div>
+      <div  class="jugador-grid-m">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631157.png?imwidth=1040&imheight=760" alt="Ryan Rollins">
+        <div class="info-pl">
+          <h2 class="nombre">Ryan Rollins</h2>
+        <div class="numy-pos">
+          <h2>2</h2>
+          <h4>Guard</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-d">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631116.png?imwidth=1040&imheight=760" alt="Patrick Baldwin Jr.">
+        <div class="info-pl">
+          <h2 class="nombre">Patrick Baldwin Jr.</h2>
+        <div class="numy-pos">
+          <h2>7</h2>
+          <h4>Forward</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-i">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629660.png?imwidth=1040&imheight=760" alt="Ty Jerome">
+        <div class="info-pl">
+          <h2 class="nombre">Ty Jerome</h2>
+        <div class="numy-pos">
+          <h2>10</h2>
+          <h4>Guard</h4>
+        </div>
+        </div> 
+      </div class="jugador-grid">
+      <div class="jugador-grid-m">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628978.png?imwidth=1040&imheight=760" alt="Donte DiVincenzo">
+        <div class="info-pl">
+          <h2 class="nombre">Donte DiVincenzo</h2>
+          <div class="numy-pos">
+            <h2>0</h2>
+            <h4>Guard</h4>
+          </div></div> 
+      </div>
+      <div class="jugador-grid-d">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629673.png?imwidth=1040&imheight=760" alt="Jordan Poole">
+        <div class="info-pl">
+          <h2 class="nombre">Jordan Poole</h2>
+        <div class="numy-pos">
+          <h2>3</h2>
+          <h4>Guard</h4>
+        </div>
+        </div> 
+      </div>
+      <div class="jugador-grid-i">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627780.png?imwidth=1040&imheight=760" alt="Gary Payton II ">
+        <div class="info-pl">
+          <h2 class="nombre">Gary Payton II</h2>
+        <div class="numy-pos">
+          <h2>8</h2>
+          <h4>Guard</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-m">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631311.png?imwidth=1040&imheight=760" alt="Lester Quinones">
+        <div class="info-pl">
+          <h2 class="nombre">Lester Quinones</h2>
+        <div class="numy-pos">
+          <h2>25</h2>
+          <h4>Guard</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-d">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203210.png?imwidth=1040&imheight=760" alt="JaMychal Green">
+        <div class="info-pl">
+          <h2 class="nombre">JaMychal Green</h2>
+          <div class="numy-pos">
+            <h2>1</h2>
+            <h4>Center</h4>
+          </div></div>
+      </div>
+      <div class="jugador-grid-i">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630541.png?imwidth=1040&imheight=760" alt="Moses Moody">
+        <div class="info-pl">
+          <h2 class="nombre">Moses Moody</h2>
+        <div class="numy-pos">
+          <h2>4</h2>
+          <h4>Guard</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-m">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2738.png?imwidth=1040&imheight=760" alt="Andre Iguodala">
+        <div class="info-pl">
+          <h2 class="nombre">Andre Iguodala</h2>
+        <div class="numy-pos">
+          <h2>9</h2>
+          <h4>Forward</h4>
+        </div>
+        </div>
+      </div>
+      <div class="jugador-grid-d">
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630237.png?imwidth=1040&imheight=760" alt="Anthony Lamb">
+        <div class="info-pl">
+          <h2 class="nombre">Anthony Lamb</h2>
+        <div class="numy-pos">
+          <h2>40</h2>
+          <h4>Forward</h4>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <h1 class="titulos">Staff</h1>
+    <!-- Coaches -->
+    <section class="contenedor-staff-flex">
+      <!-- Card -->
+      <div class="contenedor-staff-elementos">
+        <div class="card">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/204005.png?imwidth=1040&imheight=760" class="card-img-top" alt="Steve Kerr">
+          <div class="card-body">
+            <h4>Steve Kerr</h4>
+            <h5>Head Coach</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="contenedor-staff-elementos">
+        <div class="card">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/logoman.png" class="card-img-top" alt="Ron Adams">
+          <div class="card-body">
+            <h4>Ron Adams</h4>
+            <h5>Assistant Coach</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="contenedor-staff-elementos">
+        <div class="card">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201690.png?imwidth=1040&imheight=760" class="card-img-top" alt="Kenny Atkinson">
+          <div class="card-body">
+            <h4>Kenny Atkinson</h4>
+            <h5>Assistant Coach</h5>
+          </div>
+        </div>
+      </div> 
+      <!-- Card --> 
+      <div class="contenedor-staff-elementos">
+        <div class="card">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/logoman.png" class="card-img-top" alt="Jama Mahlalela">
+          <div class="card-body">
+            <h4>Jama Mahlalela</h4>
+            <h5>Assistant Coach</h5>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </main>
+
+  <footer>
+      <div class="caja-1">
+        <h3>Sponsors</h3>
+        <div class="caja-1-cont">
+          <a href="https://www.nba.com" target="_blank" class="footer-nba"><img  src="https://cdn.freebiesupply.com/logos/large/2x/nba-2-logo-png-transparent.png" alt="Logo nba"></a>
+           
+          <a href="https://www.spalding.com" target="_blank" class="footer-spalding"> <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Spalding_logo.svg/1280px-Spalding_logo.svg.png" alt="Logo Spalding"></a>
+           
+          <a href="https://www.spalding.com" target="_blank" class="footer-tnt"> <img  src="https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png" alt="Logo Tnt"></a>
+        </div>   
+      </div>
+      <div class="caja-2">
+        <h3>Community</h3>
+        <ul>
+            <li>
+                <a href="https://community.warriors.com/foundation?_gl=1*1evcd1j*_ga*MTg4MDU2MjE3LjE2ODAwNDQzOTQ.*_ga_RY9H8ZP8MH*MTY4MDE4OTc3My40LjEuMTY4MDE5MTAwNy4wLjAuMA.."
+                    target="_blank" class="caja-2-community">Community Fundation</a>
+            </li>
+            <li>
+                <a href="https://warriors.force.com/warriorsinthecommunity/s/?utm_source=gsw-web&utm_medium=nav&utm_campaign=bottom"
+                target="_blank" class="caja-2-donation">Donation Requests</a>
+            </li>
+        </ul>
+      </div>
+      <div class="caja-3">
+        <h3>Connect</h3>
+        <div>
+            <a href="https://www.facebook.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/warriors/?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><i class="bi bi-instagram"></i></a>  
+            <a href="https://www.tiktok.com/@warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><i class="bi bi-tiktok"></i></a>  
+            <a href="https://www.youtube.com/warriors" target="_blank"><i class="bi bi-youtube"></i></a>  
+            <a href="https://twitter.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><i class="bi bi-twitter"></i></a>      
+        </div>    
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
+</body>
+</html>

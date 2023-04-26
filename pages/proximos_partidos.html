@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proximos partidos</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="https://cdn.usteamcolors.com/images/nba/golden-state-warriors.svg" alt="Logo de Golden State Warriors"></a>
+            <ul>
+                <li> <a class="cabezal" href="proximos_partidos.html"> Proximos partidos.</a></li>
+                <li> <a class="cabezal" href="tickets.html"> Tickets.</a></li>
+                <li> <a class="cabezal" href="higlights.html"> Higlights.</a></li>
+                <li> <a class="cabezal" href="be_warrior.html"> Be a warrior.</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Schedule</h1>
+            <form>
+                <input type="reset" value="Reset">
+                <select name="location" id="">
+                    <option value="">All locations</option>
+                    <option value="home">
+                        Home
+                    </option>
+                    <option value="Away">
+                        Away
+                    </option>
+                </select>
+
+                <select name="season" id="">
+                    <option value="">All seasons</option>
+                    <option value="preseason">
+                        Preseason
+                    </option>
+                    <option value="regular season">
+                        Regular Season
+                    </option>
+                    <option value="play in">
+                        Play in
+                    </option>
+                    <option value="Playoff">
+                        Playoff
+                    </option>
+                </select>
+
+                <select name="opponents" id="">
+                    <option value="">All opponents</option>
+                    <option value=""></option>
+                </select>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="caja-1">
+            <h3>Sponsors</h3>
+            <ul>
+                <li>
+                    <a href="https://www.nba.com" target="_blank"><img class="sponsors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAeJsJuNRcrYebK2k9SdjEVp9k4ogC6Y1Y-irnSuuK_y7k0TnqrLDn0NfRNhc2gPI71CE&usqp=CAU" alt="Logo nba"></a>
+                </li>
+                <li>
+                    <a href="https://www.spalding.com" target="_blank"><img class="sponsors" src="data:image/png;base64,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" alt="Logo spalding"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="caja-2">
+            <h3>Community</h3>
+            <ul>
+                <li>
+                    <a href="https://community.warriors.com/foundation?_gl=1*1evcd1j*_ga*MTg4MDU2MjE3LjE2ODAwNDQzOTQ.*_ga_RY9H8ZP8MH*MTY4MDE4OTc3My40LjEuMTY4MDE5MTAwNy4wLjAuMA.."
+                        target="_blank">Community Fundation</a>
+                </li>
+                <li>
+                    <a href="https://warriors.force.com/warriorsinthecommunity/s/?utm_source=gsw-web&utm_medium=nav&utm_campaign=bottom"
+                    target="_blank">Donation Requests</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="caja-3">
+            <h3>Connect</h3>
+            <div>
+                <a href="https://www.facebook.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><img class="redes" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Logo facebook "></a>
+                <a href="https://www.instagram.com/warriors/?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><img class="redes" src=https://i.pinimg.com/originals/25/b8/17/25b817e94a86009fa7f32810911c0fa6.png alt="Logo instagram"></a>  
+                <a href="https://www.tiktok.com/@warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><img class="redes" src="https://w7.pngwing.com/pngs/396/246/png-transparent-logo-tik-tok.png" alt="Logo tik tok"></a>  
+                <a href="https://www.youtube.com/warriors" target="_blank"><img class="redes" src="https://www.pngkit.com/png/full/177-1778155_transparent-download-youtube-svg-circle-icono-youtube-negro.png" alt="Logo youtube"></a>  
+                <a href="https://twitter.com/warriors?utm_source=gsw-web&utm_medium=nav&utm_campaign=top" target="_blank"><img class="redes" src="https://w7.pngwing.com/pngs/127/569/png-transparent-connection-media-share-social-twitter-social-media-black-icon.png" alt="Logo twitter"></a>      
+            </div>    
+        </div>
+
+    </footer>
+</body>
+</html>
