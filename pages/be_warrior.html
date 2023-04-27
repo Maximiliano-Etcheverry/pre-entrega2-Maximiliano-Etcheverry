@@ -42,29 +42,34 @@
       </header>
 
     <main>
+        <section class="formyprivilegios">
         <h1>Become a warrior</h1>
         <!-- Formulario -->
-        <section>
-            <h2>Do you want to be a warrior?</h2>
-            <h3>Lets make it</h2>
-            <form class="formulario">
-                <label for="Nombre">Complete name:</label>
-                <input type="text" name="Nombre">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Repeat password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Accept terms</label>
+            </div>
+            <div class="botones"> 
+                <input type="submit" value="Submit" class="enviar">
+                <input type="reset" name="Reseat" value="Send" class="restablecer">
+            </div>
+          </form>
 
-                <label for="email">Email:</label>
-                <input type="email" name="email">
-
-                <label for="password">Password:</label>
-                <input type="password" name="password">
-
-                <label for="repeat_password">Repeat password:</label>
-                <input type="password" name="repeat_password">
-
-                <input type="reset" name="Reseat" class="reestablecer">
-                <input type="submit" name="Send" class="enviar">
-            </form>
-        </section>
-        <!-- privilegios de ser un warrior -->
+        <!-- Privilegios de ser un warrior -->
         <section class="privilegios">
             <h2>Your personal account lets you manage your tickets quickly and easily, so you can:</h2>
             <ol>
@@ -90,6 +95,7 @@
                     <p>7.You enter in a raflle for a Golden State Warriors jersey, whatever you want.</p>
                 </li>
             </ol> 
+        </section>
         </section>
     </main>
 
