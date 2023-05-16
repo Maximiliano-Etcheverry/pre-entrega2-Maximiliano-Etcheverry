@@ -1,0 +1,49 @@
+main{
+    @include media-query(mobile){
+        .carousel-caption{
+            h3{
+                color: transparent;
+            }
+        }
+        .suplentes{
+            .contenedor-grid{
+                display: grid;
+                grid-template-rows: repeat(6, 400px);
+                grid-template-columns: repeat(2, 1fr);  
+                align-items: center;
+                padding:0 2% 0 2%;
+                margin-bottom: 2%;
+                .jugador-grid-i{
+                    border-right: 0;
+                    .info-pl{
+                        @include justify(space-between);
+                        position: absolute;
+                        flex-direction: column;
+                    }
+                }
+                .jugador-grid-m{
+                    border-left: 0;
+                    border-right: 0;
+                    .info-pl{
+                        @include justify(space-between);
+                        position: absolute;
+                        flex-direction: column;
+                    }    
+                }
+                .jugador-grid-d{
+                    border-left: 0;
+                    border-right: 0;
+                    .info-pl{
+                        @include justify(space-between);
+                        position: absolute;
+                        flex-direction: column;
+                    }
+                }
+            }  
+        }
+        .contenedor-staff-flex{
+            flex-direction: column;
+            width: 55%;
+        }
+    }
+}

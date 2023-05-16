@@ -1,0 +1,32 @@
+.navbar{
+    padding-right: 10% ;
+    background-color: map-get($colores, rojo);
+    .container-fluid{
+        a{
+            text-decoration: none;
+            .logo{
+                width: 100px;
+            }
+        }
+        .navbar-toggler{
+            .navbar-toggler-icon{}
+        }
+        .collapse{
+            .navbar-nav{
+                gap: 50px;
+                .nav-item{
+                    .nav-link{
+                        font-style: italic;
+                        font-weight: 800;
+                        color: $color-blanco;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+    

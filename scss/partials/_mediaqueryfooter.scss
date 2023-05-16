@@ -1,0 +1,22 @@
+footer{
+    @include media-query(mobile){
+        @include justify(center);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        .caja-1{
+            @include justify(center);
+            margin: 2%;
+            width: 100%;
+            height: 10%;
+            flex-direction: column;
+            align-items: center;
+            .caja-1-cont{
+                @include justify(space-between);
+                align-items: center;
+                position: relative;
+                width: 100%;
+            }
+        }   
+    }
+}

@@ -1,0 +1,79 @@
+.tickets{
+    display: flex;
+    margin: 2%;
+    .foto-tickets{
+        display: flex;
+        flex-direction: column;
+        h1{
+            position: relative;
+            top: 0%;
+            left: -25%;
+        }
+        img{
+            width: 53%;
+        }
+        h2{
+            margin: 2% 2% 2% 2%;
+            color: map-get($colores, amarillo);
+            position: relative;
+            left: 15%;
+        }
+        iframe{
+            width: 53%;
+            height: 300px;
+        }
+    }
+    .tickets-compra{
+        @include justify(center);
+        flex-direction: column;
+        width: 100%;
+        h3{
+            color: map-get($colores, amarillo);
+        }
+        .caja-ticket{
+            background-color: map-get($colores, azul_claro);
+            border-radius: 25px;
+            h4{
+                text-align: center;
+                font-weight: 1000;
+            }
+        }
+        .tickets-gral{
+            @include justify(center);
+            align-items: center;
+            gap: 2%;
+            .gral{
+                @include justify(space-around);
+                align-items: center;
+                border: 2px solid black;
+                border-radius: 25px;
+                color: $color-blanco;
+                width: 100%;
+                .lugar{
+                    color: map-get($colores, azul_claro);
+                    font-size: large;
+                }
+                .precio{
+                    color: map-get($colores, amarillo);
+                }
+                .agotado{
+                    color: map-get($colores, rojo);
+                    font-weight: 1000;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            @include justify(center);
+            .boton-compra{
+                margin-top: 5px;
+                height: 100%;
+                border-radius: 100px;
+                color: map-get($colores, rojo);
+                font-size: larger;
+                font-weight: 1000;
+                width: 200px;
+            }  
+        }
+    }      
+}

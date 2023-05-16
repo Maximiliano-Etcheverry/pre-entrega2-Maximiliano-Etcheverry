@@ -1,0 +1,24 @@
+.partidos{
+    @include media-query(mobile){
+        .partido-promocion{
+            img{
+                width: 100%;
+                height: 100px;
+            }
+        }
+        .partidos-tickets{
+            .fecha-partidos{
+                flex-direction: column;
+                .fecha{
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .logoynombre{
+                    @include justify(space-between);
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

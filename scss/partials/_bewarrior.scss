@@ -1,0 +1,39 @@
+.formyprivilegios{
+    display: flex;
+    height: 50rem;
+    align-items: center;
+    .mb-3{
+        .form-label{
+            color: map-get($colores, amarillo);
+        }
+        .form-text{
+            color: $color-blanco;
+        } 
+        .form-check-label{
+            @extend .form-label;
+        }  
+    }
+    .botones{
+        @include justify(space-between);
+        .enviar{
+            background-color: transparent;
+            background-color: $color-blanco;
+            border: none;
+            line-height: 1.5;
+            font-size: 1rem;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px map-get($colores, rojo);
+            text-align: center;
+            width: 35%;
+        }
+        .restablecer{
+            @extend .enviar;
+        }
+    }
+    .privilegios{
+        margin-top: 1rem;
+        width: 100%;
+        padding-left: 7rem;
+        color: map-get($colores, amarillo);
+    }
+}

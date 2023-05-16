@@ -1,0 +1,68 @@
+.partidos{
+    .partido-promocion{
+        img{
+            width: 1fr;
+            border-radius: 25px;  
+        }
+    }
+    .partidos-tickets{
+        @include justify(center);
+        flex-direction: column;
+        gap: 5%;
+        width: 100%;
+        .fecha-partidos{
+            @include justify(space-around);
+            align-items: center;
+            margin: 1%;
+            background-color: map-get($colores, rojo);
+            border-radius: 25px;
+            .locatario{
+                text-align: start;
+                h2{
+                    width: 157px;
+                    color: map-get($colores, amarillo);
+                }
+            }
+            .fecha{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                .rondaypartido{
+                    color: black;
+                }
+                .dia{
+                    color: map-get($colores, amarillo);
+                }
+                p{
+                    color: $color-blanco;
+                }
+            }
+            .logoynombre{
+                img{
+                    width: 100px;
+                } 
+                .rival{
+                    .sacramento{
+                        color: map-get($colores, azul);
+                    }
+                    .kings{
+                        @extend .sacramento;
+                        font-weight: 1000;
+                    }
+                }  
+            }
+            .boton-partido {
+                height: 100%;
+                border-radius: 25px;
+                input{
+                    height: 100%;
+                    border-radius: 100px;
+                    color:map-get($colores, azul_claro);
+                    font-size: larger;
+                    font-weight: 1000;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

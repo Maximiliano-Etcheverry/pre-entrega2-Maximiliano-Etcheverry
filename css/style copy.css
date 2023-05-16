@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    color: #ffc72c;
+}
+/* Header */
+.logo{
+    width: 100px;
+}
+
+
+.navbar{
+    padding-right: 10% ;
+}
+
+.navbar-nav{
+    gap: 50px;
+}
+.nav-link{
+    font-style: italic;
+    font-weight: 800;
+    color: white;
+}
+
+/* Main */
+/* Carrusel */
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002f6c;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+}
+.titulos{
+    border-top: 1px solid #ffc72c;
+    width: 100%;
+    padding-top: 10px;
+}
+
+/* Logros de los jugadores titulares */
+li{
+    list-style-type: none;
+}
+.carousel-caption{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:70%;
+}
+/* Resto del roster. Jugadores y cuerpo técnico con GRID*/
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: repeat(4, 500px);
+    grid-template-columns: repeat(3, 1fr);  
+    align-items: center;
+    padding:0 2% 0 2%;
+}
+
+.contenedor-grid img{
+    width: 100%;
+    position: relative;
+    top: 30%;
+}
+.info-pl{
+    display: flex;
+    position: absolute;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    bottom: 0;
+    gap: 15%;
+
+}
+
+.jugador-grid-i{
+    padding: 0 2% 0 2% ;
+    height: 100%;
+    max-width: 345px;
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #ffc72c;
+}
+
+.jugador-grid-m{
+    padding: 0 2% 0 2% ;
+    height: 100%;
+    border-left: 1px solid #ffc72c;
+    border-right: 1px solid #ffc72c;
+    display: inline-block;
+    position: relative;
+    max-width: 345px;
+}
+
+.jugador-grid-d{
+    padding: 0 2% 0 2% ;
+    height: 100%;
+    max-width: 345px;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid #ffc72c;
+}
+.jugador-grid-i img, .jugador-grid-d img, .jugador-grid-m img{
+    border-bottom: 2px solid #ffc72c;
+}
+.nombre{
+    color: rgb(0, 107, 182);
+}
+.numy-pos h2{
+    font-weight: bold;
+}
+.numy-pos{
+    color: #ffc72c;
+}
+
+.contenedor-staff-flex{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 2% 0 2%;
+    gap: 2%;
+}
+.card{
+    background-color: transparent ;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.card-img-top{
+    border-bottom: 2px solid blue;
+}
+.card-body h4{
+    font-weight: bold;
+}
+.card-body{
+    color: rgb(0, 107, 182);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #ffc72c;
+    height: 200px;
+}
+footer ul{
+    padding-left: 0;
+}
+
+.sponsors{
+    width: 100px;
+}
+.redes{
+    width: 50px;
+}
+.caja-1{
+    margin: 10px;
+    width: 30%;
+    height: 10%;
+}
+.caja-1-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nba img{
+    width: 100px;
+}
+.footer-spalding img{
+    width: 100px;
+}
+.footer-tnt img{
+    height: 100px;
+}
+.caja-2{
+    margin: 10px;
+}
+.caja-2-community{
+    font-size: 15px;
+    color: white;
+}
+.caja-2-donation{
+    font-size: 15px;
+    color: white;
+}
+.caja-2-community:hover, .caja-2-donation:hover{
+    color: #d50032 ;
+    font-size: 20px;
+}
+.caja-3{
+    padding-right: 25px;
+    margin: 10px;
+}
+.caja-3 div{
+    font-size: 50px;
+}
+
+.caja-1 h3, .caja-2 h3, .caja-3 h3{
+    text-align: center;
+}
+footer h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.bi{
+    font-size: 30px;
+    color: white;
+}
+
+/* Segundo html "Be a warrior" */
+.formyprivilegios{
+    display: flex;
+    height: 50rem;
+    align-items: center;
+}
+.form-label{
+    color: #ffc72c;
+}
+.form-text{
+    color: white;
+}
+.form-check-label{
+    color: #ffc72c;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+.restablecer, .enviar{
+    background-color: transparent;
+    border: none;
+    line-height: 1.5;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #d50032;
+    text-align: center;
+    width: 35%;
+}
+.enviar{
+    background-color: white;
+}
+.restablecer{
+    background-color: white;
+}
+.privilegios{
+    margin-top: 1rem;
+    width: 100%;
+    padding-left: 7rem;
+    color: #ffc72c;
+}
+
+/* Proximos partidos */
+
+.partidos{
+margin-top: 2%;
+}
+
+.partido-promocion img{
+    width: 1fr;
+    border-radius: 25px;
+}
+
+.partidos-tickets{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+}
+
+.fecha-partidos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.locatario{
+text-align: start;
+}
+
+.locatario h1{
+    width: 157px;
+}
+
+.fecha-partidos img{
+    width: 100px;
+}
+.fecha{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.boton-partido input{
+    height: 100%;
+    border-radius: 25px;
+}
+
+.boton-partido {
+    height: 100%;
+    border-radius: 25px;
+}
+
+/* Highlights */
+
+.high{
+    margin-top: 2%;
+}
+
+.grid-related{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2%;
+    margin: 2% 2% 5% 2%;
+}
+
+.grid-rel-fila{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.video-gs{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 5px 4px;
+}
+
+.video-gs a{
+    text-decoration: none;
+}
+
+.img-video-gs{
+    width: 100%;
+    height: 100%; 
+}
+
+.video-play{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+
+.text-video{
+    text-decoration: none;
+    color: black;
+    padding: 3%;
+    text-align: start;
+}
+
+/* Tickets */
+
+.tickets{
+    display: flex;
+    margin: 2%;
+}
+
+.foto-tickets{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-tickets img{
+    width: 53%;
+}
+
+.foto-tickets iframe{
+    width: 53%;
+    height: 300px;
+}
+
+.foto-tickets h1{
+    position: relative;
+    top: 0%;
+    left: -25%;
+}
+
+.foto-tickets h2{
+    margin: 2% 2% 2% 2%;
+    color: #ffc72c;
+    position: relative;
+    left: 15%;
+}
+
+.tickets-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.tickets-compra h3{
+    color: #ffc72c;
+}
+
+.caja-ticket{
+    background-color: #ffc72c;
+    border-radius: 25px;
+}
+
+.tickets-gral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+
+.gral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    width: 100%;
+}
+
+.boton-compra{
+    position: relative;
+    color: red;
+    top: 20%;
+    width: 100%;
+}
+@media screen and (max-width:780px){
+
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: repeat(6, 500px);
+    grid-template-columns: repeat(2, 1fr);  
+    align-items: center;
+    padding:0 2% 0 2%;
+    margin-bottom: 2%;
+}
+
+.jugador-grid-i{
+    border-right: 0;
+}
+
+.jugador-grid-m{
+    border-left: 0;
+    border-right: 0;    
+}
+
+.jugador-grid-d{
+    border-left: 0;
+    border-right: 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-1{
+    margin: 2%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-1-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-caption{
+    top: 75%;
+}
+
+/* Be a Warrior */
+
+.formyprivilegios{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 27%;
+}
+
+.privilegios{
+    padding: 0;
+    margin: 6% 0 20% 0;
+}
+
+h1{
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.mb-3{
+    margin-top: 2%;
+}
+
+}
+
+@media screen and (max-width:608px){
+
+.contenedor-staff-flex{
+    flex-direction: column;
+}
+
+.carousel-caption{
+    top: 68%;
+}
+}
+
+@media screen and (max-width:364px){
+
+.formyprivilegios{
+    margin-bottom: 60%;
+}
+}
+
+@media screen and (max-width:333px){
+
+    .formyprivilegios{
+        margin-bottom: 80%;
+    }
+    }

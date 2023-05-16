@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding-right: 10%;
+  background-color: #d50032;
+}
+.navbar .container-fluid a {
+  text-decoration: none;
+}
+.navbar .container-fluid a .logo {
+  width: 100px;
+}
+.navbar .container-fluid .collapse .navbar-nav {
+  gap: 50px;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  font-style: italic;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #002f6c;
+}
+main h1 {
+  text-align: center;
+  color: #ffc72c;
+}
+main .titulares h2 {
+  text-align: center;
+  color: white;
+}
+main .titulares .carousel .carousel-inner .carousel-item .carousel-caption {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 70%;
+}
+main .titulares .carousel .carousel-control-prev, main .titulares .carousel .carousel-control-next {
+  width: 5%;
+}
+main .titulos {
+  border-top: 1px solid #ffc72c;
+  width: 100%;
+  padding-top: 10px;
+  color: #ffc72c;
+  text-align: center;
+}
+main .suplentes .contenedor-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 500px);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+main .suplentes .contenedor-grid .jugador-grid-i {
+  padding: 0 2% 0 2%;
+  height: 100%;
+  max-width: 345px;
+  display: inline-block;
+  position: relative;
+  border-right: 1px solid #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-i img {
+  width: 100%;
+  position: relative;
+  top: 30%;
+  border-bottom: 2px solid #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-i .info-pl {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  flex-direction: row-reverse;
+  bottom: 0;
+  gap: 15%;
+}
+main .suplentes .contenedor-grid .jugador-grid-i .info-pl .nombre {
+  color: rgb(0, 107, 182);
+}
+main .suplentes .contenedor-grid .jugador-grid-i .info-pl .numy-pos {
+  color: #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-i .info-pl .numy-pos h2 {
+  font-weight: bold;
+}
+main .suplentes .contenedor-grid .jugador-grid-i .info-pl .numy-pos h3 {
+  font-size: medium;
+}
+main .suplentes .contenedor-grid .jugador-grid-m {
+  padding: 0 2% 0 2%;
+  height: 100%;
+  border-left: 1px solid #ffc72c;
+  border-right: 1px solid #ffc72c;
+  display: inline-block;
+  position: relative;
+  max-width: 345px;
+}
+main .suplentes .contenedor-grid .jugador-grid-m img {
+  width: 100%;
+  position: relative;
+  top: 30%;
+  border-bottom: 2px solid #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-m .info-pl {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  flex-direction: row-reverse;
+  bottom: 0;
+  gap: 15%;
+}
+main .suplentes .contenedor-grid .jugador-grid-m .info-pl .nombre {
+  color: rgb(0, 107, 182);
+}
+main .suplentes .contenedor-grid .jugador-grid-m .info-pl .numy-pos {
+  color: #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-m .info-pl .numy-pos h2 {
+  font-weight: bold;
+}
+main .suplentes .contenedor-grid .jugador-grid-m .info-pl .numy-pos h3 {
+  font-size: medium;
+}
+main .suplentes .contenedor-grid .jugador-grid-d {
+  padding: 0 2% 0 2%;
+  height: 100%;
+  max-width: 345px;
+  display: inline-block;
+  position: relative;
+  border-left: 1px solid #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-d img {
+  width: 100%;
+  position: relative;
+  top: 30%;
+  border-bottom: 2px solid #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-d .info-pl {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  flex-direction: row-reverse;
+  bottom: 0;
+  gap: 15%;
+}
+main .suplentes .contenedor-grid .jugador-grid-d .info-pl .nombre {
+  color: rgb(0, 107, 182);
+}
+main .suplentes .contenedor-grid .jugador-grid-d .info-pl .numy-pos {
+  color: #ffc72c;
+}
+main .suplentes .contenedor-grid .jugador-grid-d .info-pl .numy-pos h2 {
+  font-weight: bold;
+}
+main .suplentes .contenedor-grid .jugador-grid-d .info-pl .numy-pos h3 {
+  font-size: medium;
+}
+main .contenedor-staff-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 2% 0 2%;
+  gap: 2%;
+}
+main .contenedor-staff-flex .contenedor-staff-elementos .card {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+main .contenedor-staff-flex .contenedor-staff-elementos .card .card-img-top {
+  border-bottom: 2px solid blue;
+}
+main .contenedor-staff-flex .contenedor-staff-elementos .card .card-body {
+  color: rgb(0, 107, 182);
+}
+main .contenedor-staff-flex .contenedor-staff-elementos .card .card-body h4 {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  background-color: #ffc72c;
+  height: 200px;
+}
+footer a {
+  text-decoration: none;
+}
+footer li {
+  list-style-type: none;
+}
+footer h3 {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+}
+footer .caja-1 {
+  margin: 10px;
+  width: 30%;
+  height: 10%;
+}
+footer .caja-1 .caja-1-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .caja-1 .caja-1-cont .footer-nba img, footer .caja-1 .caja-1-cont .footer-tnt img, footer .caja-1 .caja-1-cont .footer-spalding img {
+  width: 100px;
+}
+footer .caja-2 {
+  margin: 10px;
+}
+footer .caja-2 .caja-2-community {
+  font-size: 15px;
+  color: white;
+}
+footer .caja-2 .caja-2-community:hover {
+  color: #d50032;
+  font-size: 20px;
+}
+footer .caja-2 .caja-2-donation {
+  font-size: 15px;
+  color: white;
+}
+footer .caja-2 .caja-2-donation:hover {
+  color: #d50032;
+  font-size: 20px;
+}
+footer .caja-3 {
+  padding-right: 25px;
+  margin: 10px;
+}
+footer .caja-3 div {
+  font-size: 50px;
+}
+footer .caja-3 div .bi {
+  font-size: 30px;
+  color: white;
+}
+
+.formyprivilegios {
+  display: flex;
+  height: 50rem;
+  align-items: center;
+}
+.formyprivilegios .mb-3 .form-label, .formyprivilegios .mb-3 .form-check-label {
+  color: #ffc72c;
+}
+.formyprivilegios .mb-3 .form-text {
+  color: white;
+}
+.formyprivilegios .botones {
+  display: flex;
+  justify-content: space-between;
+}
+.formyprivilegios .botones .enviar, .formyprivilegios .botones .restablecer {
+  background-color: transparent;
+  background-color: white;
+  border: none;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-shadow: 1px 1px 1px #d50032;
+  text-align: center;
+  width: 35%;
+}
+.formyprivilegios .privilegios {
+  margin-top: 1rem;
+  width: 100%;
+  padding-left: 7rem;
+  color: #ffc72c;
+}
+
+.partidos .partido-promocion img {
+  width: 1fr;
+  border-radius: 25px;
+}
+.partidos .partidos-tickets {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+  width: 100%;
+}
+.partidos .partidos-tickets .fecha-partidos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1%;
+  background-color: #d50032;
+  border-radius: 25px;
+}
+.partidos .partidos-tickets .fecha-partidos .locatario {
+  text-align: start;
+}
+.partidos .partidos-tickets .fecha-partidos .locatario h2 {
+  width: 157px;
+  color: #ffc72c;
+}
+.partidos .partidos-tickets .fecha-partidos .fecha {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.partidos .partidos-tickets .fecha-partidos .fecha .rondaypartido {
+  color: black;
+}
+.partidos .partidos-tickets .fecha-partidos .fecha .dia {
+  color: #ffc72c;
+}
+.partidos .partidos-tickets .fecha-partidos .fecha p {
+  color: white;
+}
+.partidos .partidos-tickets .fecha-partidos .logoynombre img {
+  width: 100px;
+}
+.partidos .partidos-tickets .fecha-partidos .logoynombre .rival .sacramento, .partidos .partidos-tickets .fecha-partidos .logoynombre .rival .kings {
+  color: #002f6c;
+}
+.partidos .partidos-tickets .fecha-partidos .logoynombre .rival .kings {
+  font-weight: 1000;
+}
+.partidos .partidos-tickets .fecha-partidos .boton-partido {
+  height: 100%;
+  border-radius: 25px;
+}
+.partidos .partidos-tickets .fecha-partidos .boton-partido input {
+  height: 100%;
+  border-radius: 100px;
+  color: rgb(0, 107, 182);
+  font-size: larger;
+  font-weight: 1000;
+  width: 200px;
+}
+
+.highlights {
+  margin-bottom: 50px;
+}
+.highlights .high {
+  margin-top: 2%;
+}
+.highlights .grid-related {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2%;
+  margin: 2% 2% 5% 2%;
+}
+.highlights .grid-related .grid-rel-fila {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+.highlights .grid-related .grid-rel-fila .video-gs {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 5px 5px 4px;
+  background-color: rgb(0, 107, 182);
+  transition: transform 2;
+}
+.highlights .grid-related .grid-rel-fila .video-gs:hover {
+  transform: scale(1.1);
+}
+.highlights .grid-related .grid-rel-fila .video-gs a {
+  text-decoration: none;
+}
+.highlights .grid-related .grid-rel-fila .video-gs a .video-play {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.highlights .grid-related .grid-rel-fila .video-gs a .video-play .img-video-gs {
+  width: 100%;
+  height: 100%;
+}
+.highlights .grid-related .grid-rel-fila .video-gs a .text-video {
+  text-decoration: none;
+  color: black;
+  padding: 3%;
+  text-align: start;
+  color: white;
+}
+.highlights .grid-related .grid-rel-fila .video-gs a .text-video h2 {
+  font-size: x-large;
+}
+
+.tickets {
+  display: flex;
+  margin: 2%;
+}
+.tickets .foto-tickets {
+  display: flex;
+  flex-direction: column;
+}
+.tickets .foto-tickets h1 {
+  position: relative;
+  top: 0%;
+  left: -25%;
+}
+.tickets .foto-tickets img {
+  width: 53%;
+}
+.tickets .foto-tickets h2 {
+  margin: 2% 2% 2% 2%;
+  color: #ffc72c;
+  position: relative;
+  left: 15%;
+}
+.tickets .foto-tickets iframe {
+  width: 53%;
+  height: 300px;
+}
+.tickets .tickets-compra {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.tickets .tickets-compra h3 {
+  color: #ffc72c;
+}
+.tickets .tickets-compra .caja-ticket {
+  background-color: rgb(0, 107, 182);
+  border-radius: 25px;
+}
+.tickets .tickets-compra .caja-ticket h4 {
+  text-align: center;
+  font-weight: 1000;
+}
+.tickets .tickets-compra .tickets-gral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+.tickets .tickets-compra .tickets-gral .gral {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: white;
+  width: 100%;
+}
+.tickets .tickets-compra .tickets-gral .gral .lugar {
+  color: rgb(0, 107, 182);
+  font-size: large;
+}
+.tickets .tickets-compra .tickets-gral .gral .precio {
+  color: #ffc72c;
+}
+.tickets .tickets-compra .tickets-gral .gral .agotado {
+  color: #d50032;
+  font-weight: 1000;
+}
+.tickets .tickets-compra a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.tickets .tickets-compra a .boton-compra {
+  margin-top: 5px;
+  height: 100%;
+  border-radius: 100px;
+  color: #d50032;
+  font-size: larger;
+  font-weight: 1000;
+  width: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  main .carousel-caption h3 {
+    color: transparent;
+  }
+  main .suplentes .contenedor-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 400px);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 2% 0 2%;
+    margin-bottom: 2%;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-i {
+    border-right: 0;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-i .info-pl {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-m {
+    border-left: 0;
+    border-right: 0;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-m .info-pl {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-d {
+    border-left: 0;
+    border-right: 0;
+  }
+  main .suplentes .contenedor-grid .jugador-grid-d .info-pl {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+  }
+  main .contenedor-staff-flex {
+    flex-direction: column;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  footer .caja-1 {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .caja-1 .caja-1-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formyprivilegios {
+    margin-bottom: 80%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 27%;
+  }
+  .formyprivilegios .mb-3 {
+    margin-top: 2%;
+  }
+  .formyprivilegios h1 {
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  .formyprivilegios .privilegios {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partidos .partido-promocion img {
+    width: 100%;
+    height: 100px;
+  }
+  .partidos .partidos-tickets .fecha-partidos {
+    flex-direction: column;
+  }
+  .partidos .partidos-tickets .fecha-partidos .fecha {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .partidos .partidos-tickets .fecha-partidos .logoynombre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tickets {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets .foto-tickets {
+    justify-content: center;
+    align-items: center;
+  }
+  .tickets .foto-tickets h1 {
+    left: 0%;
+  }
+  .tickets .foto-tickets img {
+    width: 360px;
+  }
+  .tickets .foto-tickets h2 {
+    left: 0%;
+  }
+  .tickets .foto-tickets iframe {
+    width: 360px;
+  }
+  .tickets .tickets-compra {
+    margin-top: 15px;
+  }
+  .tickets .tickets-compra .tickets-gral {
+    text-align: center;
+  }
+  .tickets .tickets-compra .tickets-gral .gral {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.tickets{
+    @include media-query(mobile){
+        display: flex;
+        flex-direction: column;
+        .foto-tickets{
+            justify-content: center;
+            align-items: center;
+            h1{
+                left: 0%;
+            }
+            img{
+                width: 360px;
+            }
+            h2{
+                left: 0%;
+            }
+            iframe{
+                width: 360px;
+            }
+        }
+        .tickets-compra{
+            margin-top: 15px;
+            .tickets-gral{
+                text-align: center;
+                .gral{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

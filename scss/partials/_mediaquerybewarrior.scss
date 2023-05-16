@@ -1,0 +1,18 @@
+.formyprivilegios{
+    @include media-query(mobile){
+        margin-bottom: 80%;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 27%; 
+        .mb-3{
+            margin-top: 2%;
+        }
+        h1{
+            font-weight: bold;
+            margin-top: 5%;
+        } 
+        .privilegios{
+            padding-left: 0;
+        }   
+    }
+}
