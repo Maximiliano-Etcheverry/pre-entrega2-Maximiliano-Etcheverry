@@ -1,6 +1,6 @@
 .formyprivilegios{
     display: flex;
-    height: 50rem;
+    height: 35rem;
     align-items: center;
     .mb-3{
         .form-label{
@@ -35,5 +35,14 @@
         width: 100%;
         padding-left: 7rem;
         color: map-get($colores, amarillo);
+    }
+}
+.imagen{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    img{
+        width: 40%;
+        height: 40%;
     }
 }

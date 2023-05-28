@@ -1,6 +1,7 @@
 .navbar{
     padding-right: 10% ;
-    background-color: map-get($colores, rojo);
+    background: rgb(0,47,108);
+    background: linear-gradient(0deg, rgba(0,47,108,1) 19%, rgba(213,0,50,1) 71%);
     .container-fluid{
         a{
             text-decoration: none;
@@ -20,6 +21,9 @@
                         font-weight: 800;
                         color: $color-blanco;
                         text-decoration: none;
+                        &:hover{
+                            color: map-get($colores, azul_claro);
+                        }
                     }
                 }
             }

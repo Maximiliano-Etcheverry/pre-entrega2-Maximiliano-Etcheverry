@@ -4,6 +4,7 @@ footer{
         flex-direction: column;
         height: 100%;
         align-items: center;
+        position: relative;
         .caja-1{
             @include justify(center);
             margin: 2%;
@@ -17,6 +18,10 @@ footer{
                 position: relative;
                 width: 100%;
             }
-        }   
+        } 
+        .caja-2{
+        
+            position: static;
+        }  
     }
 }

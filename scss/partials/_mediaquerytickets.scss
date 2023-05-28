@@ -2,20 +2,20 @@
     @include media-query(mobile){
         display: flex;
         flex-direction: column;
-        .foto-tickets{
+        .foto-info-tickets{
             justify-content: center;
             align-items: center;
-            h1{
-                left: 0%;
+            flex-direction: column;
+            .lugar{
+                h1{
+                    left: 0%;
+                }
+                img{
+                    width: 360px;
+                } 
             }
-            img{
-                width: 360px;
-            }
-            h2{
-                left: 0%;
-            }
-            iframe{
-                width: 360px;
+            .info{
+                margin-top: 20px;
             }
         }
         .tickets-compra{
@@ -27,5 +27,6 @@
                 }
             }
         }
+        
     }
 }

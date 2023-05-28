@@ -6,7 +6,8 @@
 
 .navbar {
   padding-right: 10%;
-  background-color: #d50032;
+  background: rgb(0, 47, 108);
+  background: linear-gradient(0deg, rgb(0, 47, 108) 19%, rgb(213, 0, 50) 71%);
 }
 .navbar .container-fluid a {
   text-decoration: none;
@@ -22,6 +23,9 @@
   font-weight: 800;
   color: white;
   text-decoration: none;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(0, 107, 182);
 }
 
 main {
@@ -191,9 +195,11 @@ main .contenedor-staff-flex .contenedor-staff-elementos .card .card-body h4 {
 footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  background-color: #ffc72c;
+  padding-top: 45px;
+  background: rgb(255, 199, 44);
+  background: linear-gradient(0deg, rgb(255, 199, 44) 0%, rgb(0, 47, 108) 86%);
   height: 200px;
+  position: relative;
 }
 footer a {
   text-decoration: none;
@@ -222,6 +228,8 @@ footer .caja-1 .caja-1-cont .footer-nba img, footer .caja-1 .caja-1-cont .footer
 }
 footer .caja-2 {
   margin: 10px;
+  position: absolute;
+  left: 45%;
 }
 footer .caja-2 .caja-2-community {
   font-size: 15px;
@@ -243,17 +251,30 @@ footer .caja-3 {
   padding-right: 25px;
   margin: 10px;
 }
-footer .caja-3 div {
+footer .caja-3 div a {
   font-size: 50px;
-}
-footer .caja-3 div .bi {
   font-size: 30px;
   color: white;
+}
+footer .caja-3 div a .bi-facebook:hover {
+  color: #2f55a4;
+}
+footer .caja-3 div a .bi-instagram:hover {
+  color: #C13584;
+}
+footer .caja-3 div a .bi-tiktok:hover {
+  color: #010101;
+}
+footer .caja-3 div a .bi-youtube:hover {
+  color: #FF0000;
+}
+footer .caja-3 div a .bi-twitter:hover {
+  color: #00acee;
 }
 
 .formyprivilegios {
   display: flex;
-  height: 50rem;
+  height: 35rem;
   align-items: center;
 }
 .formyprivilegios .mb-3 .form-label, .formyprivilegios .mb-3 .form-check-label {
@@ -282,6 +303,16 @@ footer .caja-3 div .bi {
   width: 100%;
   padding-left: 7rem;
   color: #ffc72c;
+}
+
+.imagen {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.imagen img {
+  width: 40%;
+  height: 40%;
 }
 
 .partidos .partido-promocion img {
@@ -333,17 +364,42 @@ footer .caja-3 div .bi {
 .partidos .partidos-tickets .fecha-partidos .logoynombre .rival .kings {
   font-weight: 1000;
 }
-.partidos .partidos-tickets .fecha-partidos .boton-partido {
-  height: 100%;
-  border-radius: 25px;
+.partidos .partidos-tickets .fecha-partidos .boton .boton-partido {
+  position: relative;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: rgb(0, 107, 182);
+  letter-spacing: 3px;
+  border-radius: 50%;
+  font-size: larger;
+  font-weight: 1000;
+  overflow: hidden;
+  z-index: 1;
 }
-.partidos .partidos-tickets .fecha-partidos .boton-partido input {
+.partidos .partidos-tickets .fecha-partidos .boton .boton-partido input {
   height: 100%;
   border-radius: 100px;
   color: rgb(0, 107, 182);
   font-size: larger;
   font-weight: 1000;
   width: 200px;
+  background-color: #ffc72c;
+}
+.partidos .partidos-tickets .fecha-partidos .boton .boton-partido::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -200%;
+  background-color: rgb(0, 107, 182);
+  height: 200%;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+.partidos .partidos-tickets .fecha-partidos .boton .boton-partido:hover::before {
+  top: 0;
+  border-radius: 0%;
 }
 
 .highlights {
@@ -402,29 +458,38 @@ footer .caja-3 div .bi {
 
 .tickets {
   display: flex;
+  flex-direction: column;
   margin: 2%;
 }
-.tickets .foto-tickets {
+.tickets .foto-info-tickets {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-direction: row-reverse;
 }
-.tickets .foto-tickets h1 {
+.tickets .foto-info-tickets .lugar h1 {
   position: relative;
-  top: 0%;
-  left: -25%;
+  top: -8px;
+  left: -1%;
+  margin-bottom: 10px;
 }
-.tickets .foto-tickets img {
-  width: 53%;
+.tickets .foto-info-tickets .lugar img {
+  width: 100%;
+  height: 80%;
 }
-.tickets .foto-tickets h2 {
-  margin: 2% 2% 2% 2%;
+.tickets .foto-info-tickets .info {
+  margin-right: 20px;
+}
+.tickets .foto-info-tickets .info h3 {
   color: #ffc72c;
-  position: relative;
-  left: 15%;
 }
-.tickets .foto-tickets iframe {
-  width: 53%;
-  height: 300px;
+.tickets .foto-info-tickets .info h4 {
+  color: rgb(0, 107, 182);
+}
+.tickets .foto-info-tickets .info p {
+  color: #ffc72c;
+}
+.tickets .foto-info-tickets .info ul {
+  color: #ffc72c;
 }
 .tickets .tickets-compra {
   display: flex;
@@ -433,10 +498,10 @@ footer .caja-3 div .bi {
   width: 100%;
 }
 .tickets .tickets-compra h3 {
-  color: #ffc72c;
+  color: #d50032;
 }
 .tickets .tickets-compra .caja-ticket {
-  background-color: rgb(0, 107, 182);
+  background-color: #ffc72c;
   border-radius: 25px;
 }
 .tickets .tickets-compra .caja-ticket h4 {
@@ -455,33 +520,72 @@ footer .caja-3 div .bi {
   align-items: center;
   border: 2px solid black;
   border-radius: 25px;
-  color: white;
+  background-color: #ffc72c;
   width: 100%;
+  border: 3px solid rgb(0, 107, 182);
 }
 .tickets .tickets-compra .tickets-gral .gral .lugar {
   color: rgb(0, 107, 182);
   font-size: large;
+  font-weight: 500;
+  margin: 0;
 }
 .tickets .tickets-compra .tickets-gral .gral .precio {
-  color: #ffc72c;
+  color: black;
+  margin: 0;
 }
 .tickets .tickets-compra .tickets-gral .gral .agotado {
   color: #d50032;
   font-weight: 1000;
+  margin: 0;
 }
 .tickets .tickets-compra a {
-  text-decoration: none;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 .tickets .tickets-compra a .boton-compra {
-  margin-top: 5px;
-  height: 100%;
-  border-radius: 100px;
-  color: #d50032;
+  position: relative;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: rgb(0, 107, 182);
+  letter-spacing: 3px;
+  border: 3px solid #d50032;
+  border-radius: 50%;
   font-size: larger;
   font-weight: 1000;
-  width: 200px;
+  overflow: hidden;
+  z-index: 1;
+}
+.tickets .tickets-compra a .boton-compra::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -200%;
+  background-color: #d50032;
+  height: 200%;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+.tickets .tickets-compra a .boton-compra:hover::before {
+  top: 0;
+  border-radius: 0%;
+}
+.tickets .direccion {
+  margin-top: 10px;
+}
+.tickets .direccion h2 {
+  margin: 2% 2% 2% 2%;
+  color: #ffc72c;
+  position: relative;
+  text-align: center;
+}
+.tickets .direccion iframe {
+  width: 100%;
+  height: 300px;
 }
 
 @media screen and (max-width: 480px) {
@@ -538,6 +642,7 @@ footer .caja-3 div .bi {
     flex-direction: column;
     height: 100%;
     align-items: center;
+    position: relative;
   }
   footer .caja-1 {
     display: flex;
@@ -555,6 +660,9 @@ footer .caja-3 div .bi {
     position: relative;
     width: 100%;
   }
+  footer .caja-2 {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -562,7 +670,7 @@ footer .caja-3 div .bi {
     margin-bottom: 80%;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 27%;
+    margin-bottom: 64%;
   }
   .formyprivilegios .mb-3 {
     margin-top: 2%;
@@ -601,21 +709,19 @@ footer .caja-3 div .bi {
     display: flex;
     flex-direction: column;
   }
-  .tickets .foto-tickets {
+  .tickets .foto-info-tickets {
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
-  .tickets .foto-tickets h1 {
+  .tickets .foto-info-tickets .lugar h1 {
     left: 0%;
   }
-  .tickets .foto-tickets img {
+  .tickets .foto-info-tickets .lugar img {
     width: 360px;
   }
-  .tickets .foto-tickets h2 {
-    left: 0%;
-  }
-  .tickets .foto-tickets iframe {
-    width: 360px;
+  .tickets .foto-info-tickets .info {
+    margin-top: 20px;
   }
   .tickets .tickets-compra {
     margin-top: 15px;
